@@ -130,15 +130,13 @@ main .description {
     padding-right: 10px;
 }
 
+/* FOOTER */
+
 footer {
     background-color: #576490;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
@@ -158,4 +156,10 @@ footer .socials * {
 footer .author {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width:400px) {
+    footer .author {
+        display: none;
+    }
 }

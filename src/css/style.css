@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
     background-color: #DCD6F7;
     color: black;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body.dark-theme {
@@ -36,6 +40,8 @@ main {
     padding: 25px;
     max-width: 1280px;
     margin: 0 auto;
+    flex: 1;
+    padding-bottom: 200px;
 }
 
 .pokemon-list {
@@ -138,6 +144,8 @@ footer {
     justify-content: space-between;
     padding: 20px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .dark-theme footer {

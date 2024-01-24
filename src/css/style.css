@@ -1,173 +1,173 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
-    background-color: #DCD6F7;
-    color: black;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  background-color: #dcd6f7;
+  color: black;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body.dark-theme {
-    background-color: #0C1618;
-    color: #eeeafc;
+  background-color: #0c1618;
+  color: #eeeafc;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 header .logo-image,
 header .theme-button-image {
-    width: 30px;
+  width: 30px;
 }
 
 header #theme-button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 header .logo-image:hover,
 header .theme-button-image:hover {
-    transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 main {
-    padding: 25px;
-    max-width: 1280px;
-    margin: 0 auto;
-    flex: 1;
-    padding-bottom: 200px;
+  padding: 25px;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex: 1;
+  padding-bottom: 200px;
 }
 
 .pokemon-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 main .pokemon-card {
-    background-color: #576490;
-    width: 200px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid #333333;
-    border-radius: 10px;
-    box-shadow: 3px 3px #333333;
-    transition: 0.3s ease-in-out;
+  background-color: #576490;
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  box-shadow: 3px 3px #333333;
+  transition: 0.3s ease-in-out;
 }
 
 .dark-theme .pokemon-card {
-    background-color: #5F5AA2;
+  background-color: #5f5aa2;
 }
 
 main .pokemon-card:hover {
-    background-color: #00A5E0;
-    transform: scale(1.10);
-    box-shadow: none;
-    border-color: #002f41;
+  background-color: #00a5e0;
+  transform: scale(1.1);
+  box-shadow: none;
+  border-color: #002f41;
 }
 
 main .pokemon-card .info {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #333333;
-    border-radius: 20px;
-    border-style: dashed;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #333333;
+  border-radius: 20px;
+  border-style: dashed;
 }
 
 main .pokemon-card .info span {
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 17px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
 }
 
 main .pokemon-card .pokemon-gif {
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 main .pokemon-card .types {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 main .pokemon-card .type {
-    padding: 8px;
-    border-radius: 10px;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .grass {
-    background-color: #7ac74c;
+  background-color: #7ac74c;
 }
 
 .fire {
-    background-color: #ee8130;
+  background-color: #ee8130;
 }
 
 .water {
-    background-color: #6390f0;
+  background-color: #6390f0;
 }
 
 .poison {
-    background-color: #df67ddfb;
+  background-color: #df67ddfb;
 }
 
 .insect {
-    background-color: #a6b91a;
+  background-color: #a6b91a;
 }
 
 .flying {
-    background-color: #29b19f;
+  background-color: #29b19f;
 }
 
 main .description {
-    max-height: 80px;
-    overflow-y: scroll;
-    font-size: 14px;
-    padding-right: 10px;
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #576490;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+  background-color: #576490;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .dark-theme footer {
-    background-color: #5F5AA2;
+  background-color: #5f5aa2;
 }
 
 footer .socials {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 footer .socials * {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 footer .author {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-@media only screen and (max-width:400px) {
-    footer .author {
-        display: none;
-    }
+@media only screen and (max-width: 400px) {
+  footer .author {
+    display: none;
+  }
 }
